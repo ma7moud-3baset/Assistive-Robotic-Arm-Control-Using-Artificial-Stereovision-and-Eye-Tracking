@@ -6,6 +6,9 @@ An innovative assistive technology system that enables individuals with mobility
 
 This system empowers users with severe motor impairments to perform daily tasks like grasping objects, pointing, and manipulating their environment using only eye movements. The solution is designed to be affordable, non-invasive, and accessible.
 
+![Alt Text](images/arm.jpeg)
+
+
 ### Key Features
 - **Real-time Eye Tracking**: Uses MediaPipe for accurate gaze detection
 - **6-DOF Robotic Arm Control**: Precise servo motor control with PCA9685 driver
@@ -319,4 +322,4 @@ This project was developed as part of a Bachelor's degree final year project at 
 
 
 
-*Last updated: January 2025 | Version 1.0.0*
+*Last updated: June 2025 | Version 1.0.0*
