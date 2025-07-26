@@ -21,3 +21,38 @@ This system empowers users with severe motor impairments to perform daily tasks�
 ## 🏗️ System Architecture
 
 [User Eye Gaze] → [Camera] → [MediaPipe] → [Raspberry Pi 4] → [PCA9685 Driver] → [6-DOF Robotic Arm]
+
+
+
+---
+
+## ⚙️ Hardware Components
+
+| Component | Description |
+|----------|-------------|
+| **Raspberry Pi 4 (8GB)** | Main processing unit |
+| **6-DOF Robotic Arm** | MG996R servo-based manipulator |
+| **PCA9685 Driver** | 16-channel PWM controller |
+| **USB Webcam** | Eye tracking input |
+| **Power Supply** | 5–6V source for servo motors |
+
+---
+
+## 🖥️ Software Stack
+
+- **Python 3.x**
+- **MediaPipe** – Eye/face tracking
+- **OpenCV** – Vision processing
+- **Adafruit PCA9685 & Motor Libraries**
+- **Threading** – Smooth concurrent execution
+
+---
+
+## 🚀 Installation & Setup
+
+### 📦 Prerequisites
+```bash
+sudo apt update && sudo apt upgrade -y
+pip install opencv-python mediapipe numpy
+pip install adafruit-circuitpython-pca9685 adafruit-circuitpython-motor
+
