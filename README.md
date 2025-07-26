@@ -2,9 +2,6 @@
 
 An innovative assistive technology system that enables individuals with mobility impairments to control a 6-DOF robotic arm using eye movements. This project combines computer vision, real-time processing, and robotics to provide an intuitive, hands-free control interface.
 
-![System Demo](images/system_demo.gif)
-*Real-time eye tracking controlling a 6-DOF robotic arm*
-
 ## 🎯 Project Overview
 
 This system empowers users with severe motor impairments to perform daily tasks like grasping objects, pointing, and manipulating their environment using only eye movements. The solution is designed to be affordable, non-invasive, and accessible.
@@ -14,7 +11,7 @@ This system empowers users with severe motor impairments to perform daily tasks 
 - **6-DOF Robotic Arm Control**: Precise servo motor control with PCA9685 driver
 - **Non-invasive Interface**: No physical contact or complex setup required
 - **Intuitive Control**: Natural eye movements translate to robotic actions
-- **Grasp Functionality**: Extended center gaze (7 seconds) triggers gripper
+- **Grasp Functionality**: Extended center gaze (5 seconds) triggers gripper
 - **Visual Feedback**: Real-time display of system status and servo positions
 
 ## 🏗️ System Architecture
@@ -261,7 +258,7 @@ sudo sync && sudo sysctl -w vm.drop_caches=3
 
 ## 🛡️ Safety Features
 
-- **Dual-Phase Delay**: 7-second total delay prevents accidental activation
+- **Dual-Phase Delay**: 5-second total delay prevents accidental activation
 - **Angle Limiting**: Servo angles constrained to safe ranges (0-180°)
 - **Graceful Degradation**: Continues in simulation mode if hardware fails
 - **Error Handling**: Comprehensive exception handling for stability
@@ -291,201 +288,35 @@ sudo sync && sudo sysctl -w vm.drop_caches=3
 - Better visual indicators for system states
 
 ## 🔮 Future Enhancements
-
-### Phase 1: Immediate Improvements
 - [ ] **Object Detection**: YOLOv8 integration for intelligent object selection
 - [ ] **User Calibration**: Personalized gaze threshold adjustment
 - [ ] **Audio Feedback**: Sound confirmation for commands
 - [ ] **Configuration GUI**: User-friendly setup interface
 
-### Phase 2: Advanced Features  
-- [ ] **Voice Commands**: Backup control modality
-- [ ] **Gesture Integration**: Hand gesture support for able users
-- [ ] **Learning Algorithm**: Adaptive user behavior learning
-- [ ] **Remote Monitoring**: Caregiver dashboard and alerts
-
-### Phase 3: Clinical Integration
-- [ ] **Medical Device Certification**: FDA/CE marking compliance
-- [ ] **Clinical Trials**: Validation with target user population
-- [ ] **Insurance Integration**: Coverage and reimbursement pathways
-- [ ] **Rehabilitation Integration**: Therapy program compatibility
-
-### Technical Roadmap
-```mermaid
-gantt
-    title Development Roadmap
-    dateFormat  YYYY-MM-DD
-    section Phase 1
-    Object Detection    :2025-02-01, 60d
-    User Calibration    :2025-02-15, 45d
-    section Phase 2  
-    Voice Commands      :2025-04-01, 90d
-    Learning Algorithm  :2025-04-15, 120d
-    section Phase 3
-    Clinical Trials     :2025-07-01, 180d
-    Certification       :2025-08-01, 120d
-```
-
 ## 📚 Academic Context
 
-This project was developed as part of a Bachelor's degree final year project at the **College of Computing and Information Technology, South Valley University, Egypt** (2025).
+This project was developed as part of a Bachelor's degree final year project at the **College of Computing and Information Technology, Arab Academy for Science, Technology and Maritime Transport , Egypt** (2025).
 
 ### Supervision Team
 - **Prof. Ammar Mostafa Hassan** - Project Supervisor
-- **Prof. Mohamed AbdElNaser Mohamed** - Co-Supervisor
+- **Prof. Mohamed AbdElNaser Mohamed** - Project Supervisor
 
 ### Development Team
 | Name | Role | Student ID |
 |------|------|------------|
 | **Ahmed Mohamed Atta Mahmoud** | Team Lead | 211013038 |
 | **Mahmoud Abdelbaset Mohamed** | Hardware Integration | 211008597 |
-| **Amr Fathy Ahmed Mohamed** | Software Development | 211013265 |
-| **Mohamed Ibrahim Abdo** | System Testing | 211008557 |
+| **Mohamed Ibrahim Abdo** | Software Development | 211008557 |
+| **Amr Fathy Ahmed Mohamed** | System Testing  | 211013265 |
 | **Ahmed Salah Eldin Mahmoud** | Documentation | 211013137 |
 
-### Academic Publications
-- Conference paper submitted to IEEE ICRA 2025
-- Journal article in preparation for IEEE Transactions on Assistive Technology
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 Assistive Robotic Arm Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting.
-
-### How to Contribute
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)  
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
-
-### Development Standards
-- Follow PEP 8 style guidelines
-- Add comprehensive docstrings
-- Include unit tests for new features
-- Update documentation as needed
-
-### Bug Reports
-Please use the [Issue Template](.github/ISSUE_TEMPLATE.md) when reporting bugs.
-
-## 📞 Support & Community
-
-### Getting Help
-- 📖 **Documentation**: Check this README and inline code comments
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/yourusername/assistive-robotic-arm/issues)
-- 💡 **Feature Requests**: [Discussions page](https://github.com/yourusername/assistive-robotic-arm/discussions)
-- 📧 **Contact**: [project-email@university.edu](mailto:project-email@university.edu)
-
-### Community
-- Join our [Discord Server](https://discord.gg/assistive-robotics)
-- Follow updates on [Twitter](https://twitter.com/assistive_arm)
-- Star ⭐ the repository if you find it useful!
 
 ## 🙏 Acknowledgments
 
-### Technology Partners
-- **Google Research** - MediaPipe framework
-- **Adafruit Industries** - Hardware libraries and documentation
-- **OpenCV Foundation** - Computer vision tools
-- **Raspberry Pi Foundation** - Single-board computer platform
-
-### Inspiration & Research
-- **Assistive Technology Research Community** - Guidance and best practices
-- **IEEE RAS Technical Committee on Assistive & Rehabilitation Robotics**
-- **International Association of Gerontechnology**
-
-### Special Thanks
 - **Arab Academy for Science, Technology and Maritime Transport** - Primary sponsor
-- **South Valley University** - Research facilities and support
 - **Study participants** - Valuable feedback and testing
 - **Open source community** - Tools and libraries that made this possible
 
-## 📈 Impact & Applications
 
-### Target Demographics
-- **Primary**: Individuals with quadriplegia or severe motor impairments
-- **Secondary**: Stroke patients with limited mobility
-- **Tertiary**: Elderly users requiring assistance with daily tasks
-
-### Use Cases
-- **Activities of Daily Living (ADLs)**:
-  - Eating and drinking assistance
-  - Object manipulation and retrieval
-  - Personal care tasks
-  
-- **Communication & Interaction**:
-  - Pointing and gesturing
-  - Environmental control
-  - Emergency signaling
-
-- **Rehabilitation & Therapy**:
-  - Motor skill assessment
-  - Cognitive-motor training
-  - Progress tracking
-
-### Social Impact
-- **Independence**: Reduced reliance on caregivers
-- **Dignity**: Maintained personal autonomy
-- **Quality of Life**: Enhanced daily living capabilities
-- **Economic**: Potential healthcare cost reduction
-
-### Market Potential
-- **Global assistive technology market**: $26.8 billion (2022)
-- **Projected growth**: 7.4% CAGR through 2030
-- **Target price point**: <$2,000 (vs $15,000+ for commercial alternatives)
-
----
-
-## 📱 Quick Start Guide
-
-### For Researchers
-```bash
-git clone https://github.com/yourusername/assistive-robotic-arm.git
-cd assistive-robotic-arm
-pip install -r requirements.txt
-python paste.py
-```
-
-### For Developers
-```bash
-# Development setup
-git clone https://github.com/yourusername/assistive-robotic-arm.git
-cd assistive-robotic-arm
-python -m venv dev-env
-source dev-env/bin/activate
-pip install -r requirements-dev.txt
-pre-commit install
-```
-
-### For End Users
-1. Download the latest [release](https://github.com/yourusername/assistive-robotic-arm/releases)
-2. Follow the [Installation Guide](#-installation--setup)
-3. Run the [Setup Wizard](docs/setup-wizard.md)
-4. Complete the [User Tutorial](docs/user-tutorial.md)
-
----
-
-**🤖 This system represents a step toward more accessible and affordable assistive robotics. Together, we can build technology that empowers everyone to live more independently.**
-
----
 
 *Last updated: January 2025 | Version 1.0.0*
